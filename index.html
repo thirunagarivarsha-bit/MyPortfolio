@@ -1,17 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varsha | Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f6fb;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #4a76a8, #6c9bd2);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+header p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* NAVBAR */
+nav {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #4a76a8;
+}
+
+/* MAIN */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section h2 {
+  text-align: center;
+  color: #4a76a8;
+  margin-bottom: 15px;
+}
+
+.about, .education {
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-box {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  background: #4a76a8;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* PROJECT / CARD STYLE */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 30%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact a {
+  text-decoration: none;
+  background: #4a76a8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  background: #345a85;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <img src="profile.src.jpg" alt="Profile" class="profile-pic">
+  <img src="profile.src.jpg" class="profile-pic">
   <h1>Thirunagari Varsha</h1>
-  <p>Student | Web Development Learner</p>
+  <p>Student | Math Tutor | Web Development Learner</p>
 </header>
 
 <nav>
@@ -19,210 +190,90 @@
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#talents">Talents</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <main>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p class="about">
-      I am a first-year B.Tech student interested in software development.
-      I have learned C, Java basics, HTML, CSS, and Flexbox.
-    </p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p class="about">
+    I am a B.Tech student passionate about teaching and software development.  
+    I specialize in Mathematics and focus on making concepts simple and easy to understand.
+  </p>
+</section>
 
-  <section id="education">
-        <h2>Education</h2>
-        <p class="education">I am a first-year B.Tech Computer Science student
-           at KL University. I completed my Intermediate education at Narayana Junior 
-           College and SSC at Shiva Sai International School. 
-           My education has helped me build a strong foundation in mathematics,
-            programming basics, and problem-solving skills.</p>
-    </section>
+<section id="education">
+  <h2>Education</h2>
+  <p class="education">
+    Completed Intermediate (12th Standard) with 993/1000 marks from NTR Junior College, Himayathnagar.  
+    Completed SSC (10th Standard) with 9.5 CGPA from Shiva Sai International School, Chilkoor.
+  </p>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill-box">HTML</div>
-      <div class="skill-box">CSS</div>
-      <div class="skill-box">Python</div>
-      <div class="skill-box">Java</div>
-      <div class="skill-box">C</div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">Java</div>
+    <div class="skill-box">Mathematics (Advanced)</div>
+    <div class="skill-box">Computer Architecture</div>
+    <div class="skill-box">Spoken English</div>
+  </div>
+
+  <p class="about">
+    Highly skilled, fast learner with strong grasping ability and adaptive thinking.
+  </p>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="projects">
+    <div class="project-card">
+      <p>
+        • District Level Topper – Viswam Edutech Abacus <br>
+        • Certified in Spoken English (Speaking Tree) <br>
+        • Telangana State Ranker – Intermediate <br>
+        • Certified in Computer Architecture <br>
+        • Qualified Kat Academy NASA Entrance <br>
+        • Visited ISRO Space Station with researchers
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Student Registration Form</h3>
-        <p>Form created using HTML and CSS.</p>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Personal portfolio using HTML and Flexbox.</p>
-      </div>
-      <div class="project-card">
-        <h3>Resume</h3>
-        <p>professional Resume styling using HTML and CSS.</p>
-      </div>
-    </div>
-  </section>
+<section id="teaching">
+  <h2>Teaching Services</h2>
+  <p class="about">
+    I offer tuition for Classes 6–12 (SSC & CBSE).  
+    Focus on concept clarity, problem-solving, and exam preparation with a friendly teaching style.
+  </p>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact">
-      <a href="mailto:varsha19@gmail.com">Email</a>
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-    </div>
-  </section>
+<section id="talents">
+  <h2>Additional Skills</h2>
+  <p class="about">
+    Skilled in pencil sketching and portrait drawing, reflecting creativity and attention to detail.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <a href="mailto:varshaworksat@gmail.com">Email</a>
+  </div>
+</section>
 
 </main>
 
 <footer>
-  <p>© 2026 Thirunagari Varsha | All Rights Reserved</p>
+  <p>© 2026 Thirunagari Varsha</p>
 </footer>
- <style>
-   
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #f4f6fb;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #4a76a8;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    .profile-pic {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 15px;
-    }
-
-   
-    nav {
-      background-color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;            
-      justify-content: center;    
-      gap: 20px;
-      padding: 15px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #4a76a8;
-    }
-
-    
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;   
-            gap: 40px;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 15px;
-      color: #4a76a8;
-    }
-
-  
-    .about {
-      text-align: center;
-    }
-
-    
-   .education{
-    text-align: center;
-   }
-
-    
-    .skills {
-      display: flex;            
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .skill-box {
-      background: white;
-      padding: 15px 25px;
-      border-radius: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-   
-    .projects {
-      display: flex;          
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .project-card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 100%;
-    }
-
- 
-    .contact {
-      display: flex;           
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .contact a {
-      text-decoration: none;
-      background-color: #4a76a8;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 20px;
-    }
-
-
-    footer {
-      background-color: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-
-   
-  </style>
 
 </body>
 </html>
-
-
